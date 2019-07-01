@@ -1,0 +1,30 @@
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    min-height: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.header__title {
+    color: inherit;
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+    margin: 0;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.header__title-link {
+    text-decoration: none;
+}
