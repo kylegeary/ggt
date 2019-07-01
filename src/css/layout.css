@@ -625,6 +625,10 @@ pre tt:after {
     content: '';
 }
 
+.main {
+    margin-top: 1rem;
+}
+
 .page-wrapper {
     width: 100%;
     box-sizing: border-box;
