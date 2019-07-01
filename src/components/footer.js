@@ -5,7 +5,11 @@ const Footer = () => (
     <footer className="footer">
         <div className="footer__content">
             <p className="footer__content-text">
-                Built as a 🎁 for Chris &amp; Paige
+                Built as a{' '}
+                <span role="img" aria-label="Gift icon">
+                    🎁
+                </span>{' '}
+                for Chris &amp; Paige
             </p>
             <p className="footer__content-text">
                 &copy; {new Date().getFullYear()}{' '}

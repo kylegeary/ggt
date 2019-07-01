@@ -3,16 +3,16 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 
-const AboutPage = () => (
+const Post = () => (
     <Layout>
-        <SEO title="About" />
-        <h1>About us</h1>
-        <p>Lorem Ipsum</p>
-        <p>dolor sit amet.</p>
+        <SEO title="Post" />
+        <h1>Post</h1>
+        <p>Lorem Ispum</p>
+        <p>Dolor Sit Amet.</p>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
             <Image />
         </div>
     </Layout>
 );
 
-export default AboutPage;
+export default Post;
