@@ -1,0 +1,8 @@
+backend:
+    name: git-gateway
+    branch: master
+publish_mode: editorial_workflow
+media_library:
+    name: uploadcare
+    config:
+        publicKey: 7bd9fdbbcfc47d6f8ecd
