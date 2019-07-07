@@ -1,17 +1,36 @@
 import React from 'react';
-
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
+import Card from '../components/card';
+import '../css/card.css';
 
-const IndexPage = () => (
+export const PostsQuery = graphql`
+    query {
+        allMdx(
+            sort: { order: DESC, fields: frontmatter___date }
+            filter: { frontmatter: { type: { eq: "recipe" } } }
+        ) {
+            edges {
+                node {
+                    excerpt(pruneLength: 10)
+                    code {
+                        body
+                    }
+                }
+            }
+        }
+    }
+`;
+
+const IndexPage = ({ data }) => (
     <Layout>
         <SEO title="Home" />
-        <h1>Home Page</h1>
-        <p>Lorem Ispum</p>
-        <p>Dolor Sit Amet.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-            <Image />
+        <div className="cards-wrapper">
+            <div className="cards">
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     </Layout>
 );

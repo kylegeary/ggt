@@ -100,6 +100,23 @@
     box-sizing: border-box;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: calc(100% + 2rem);
+    margin: -1rem;
+}
+
+.cards-wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (min-width: 35rem) {
     .card-wrapper {
         flex-grow: 0;
