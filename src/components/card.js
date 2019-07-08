@@ -1,22 +1,29 @@
 import React from 'react';
 import '../css/card.css';
+import { Link } from 'gatsby';
 
-const Card = () => (
+const Card = ({ post }) => (
     <div className="card-wrapper">
         <div className="card">
-            <div className="card__media"></div>
-            <span className="card-content__category">Recipe</span>
-            <div className="card__content">
-                <h2 className="card-content__heading">Heading</h2>
-                <p className="card-content__body">
-                    This is a media card. You can use this section to describe
-                    the content.
-                </p>
+            <div className="card__media">
+                <div className="card__overlay"></div>
             </div>
-            <div className="card__cta">
-                <button className="card-cta__button" tabindex="0" type="button">
-                    <span className="card-cta__button--label">Read &rarr;</span>
-                </button>
+            <div className="card__content">
+                <div className="card__content-metadata">
+                    <span className="card__content-category">{post.type}</span>
+                    <span className="card__content-date">{post.date}</span>
+                </div>
+                <h2 className="card__content-title">
+                    <Link to={post.slug}>{post.title}</Link>
+                </h2>
+                <p className="card__content-body">{post.excerpt}</p>
+                <div className="card__content-cta">
+                    <div className="card__content-cta-link">
+                        <span className="card__content-cta-link-label">
+                            <Link to={post.slug}>Read More</Link>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

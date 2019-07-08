@@ -26,5 +26,6 @@
 }
 
 .header__title-link {
+    color: inherit;
     text-decoration: none;
 }
