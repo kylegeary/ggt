@@ -19,9 +19,11 @@ const Card = ({ post }) => (
                 <p className="card__content-body">{post.excerpt}</p>
                 <div className="card__content-cta">
                     <div className="card__content-cta-link">
-                        <span className="card__content-cta-link-label">
-                            <Link to={post.slug}>Read More</Link>
-                        </span>
+                        <Link to={post.slug}>
+                            <span className="card__content-cta-link-label">
+                                Read More
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </div>

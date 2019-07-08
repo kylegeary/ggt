@@ -14,11 +14,14 @@
 .card__content {
     flex-grow: 1;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .card__content-body {
     color: #333;
-    margin: 0;
+    margin: 0 0 1rem 0;
     font-size: 1rem;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
@@ -27,7 +30,7 @@
 }
 
 .card__content-cta {
-    margin-top: 1rem;
+    margin-top: auto;
 }
 .card__content-cta-link {
     padding: 4px 0;
@@ -62,7 +65,7 @@
     background-color: #0134ff;
 }
 
-.card__content-cta-link-label a {
+.card__content-cta-link a {
     text-decoration: none;
     color: #fff;
 }
