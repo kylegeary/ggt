@@ -12,6 +12,7 @@ const usePosts = () => {
                         slug
                         title
                         type
+                        featuredImage
                     }
                 }
             }
@@ -25,6 +26,8 @@ const usePosts = () => {
         title: post.frontmatter.title,
         type: post.frontmatter.type,
         excerpt: post.excerpt,
+        featuredImage: post.frontmatter.featuredImage,
+        featuredImageAlt: post.frontmatter.featuredImageAlt,
     }));
 };
 

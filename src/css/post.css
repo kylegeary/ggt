@@ -1,0 +1,39 @@
+.post {
+}
+
+.post__body {
+}
+
+.post__cta {
+}
+
+.post__cta-link {
+}
+
+.post__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.post__info-author,
+.post__info-date,
+.post__info-type {
+    display: block;
+}
+
+.post__info-author {
+}
+
+.post__info-date {
+}
+
+.post__info-title {
+}
+
+.post__info-author {
+}
+
+.post__info-type {
+}

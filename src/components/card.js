@@ -5,7 +5,12 @@ import { Link } from 'gatsby';
 const Card = ({ post }) => (
     <div className="card-wrapper">
         <div className="card">
-            <div className="card__media">
+            <div
+                className="card__media"
+                style={{
+                    backgroundImage: `url(${post.featuredImage})`,
+                }}
+            >
                 <div className="card__overlay"></div>
             </div>
             <div className="card__content">
