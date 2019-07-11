@@ -30,7 +30,10 @@ const PostTemplate = ({ data: { mdx: post } }) => (
                 <span className="post__info-date">{post.frontmatter.date}</span>
                 <h1 className="post__info-title">{post.frontmatter.title}</h1>
                 <span className="post__info-author">
-                    By: {post.frontmatter.author}
+                    By:{' '}
+                    <Link to={'/' + post.frontmatter.author.replace(/ /g, '')}>
+                        {post.frontmatter.author}
+                    </Link>
                 </span>
                 <span className="post__info-type">{post.frontmatter.type}</span>
             </section>
@@ -40,13 +43,15 @@ const PostTemplate = ({ data: { mdx: post } }) => (
                     src={post.frontmatter.featuredImage}
                     alt={post.frontmatter.featuredImageAlt}
                 />
-                <MDXRenderer>{post.code.body}</MDXRenderer>
+                <div className="post__body-content">
+                    <MDXRenderer>{post.code.body}</MDXRenderer>
+                </div>
+                <div className="post__cta">
+                    <Link to="/" className="post__cta-link">
+                        &larr; back to all posts
+                    </Link>
+                </div>
             </main>
-        </div>
-        <div className="post__cta">
-            <Link to="/" className="post__cta-link">
-                &larr; back to all posts
-            </Link>
         </div>
     </Layout>
 );

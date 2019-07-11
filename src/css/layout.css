@@ -1,3 +1,10 @@
+:root {
+    --font-family-primary: 'Open Sans', sans-serif;
+    --font-family-secondary: 'Josefin Sans', sans-serif;
+    --font-family-tertiary: 'IBM Plex Sans', sans-serif;
+    --font-family-quaternary: 'Roboto', sans-serif;
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -8,7 +15,7 @@ body {
     color: rgba(0, 0, 0, 0.87);
     margin: 0;
     font-size: 0.875rem;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: var(--font-family-primary);
     font-weight: 400;
     line-height: 1.43;
     letter-spacing: 0.01071em;
@@ -70,6 +77,7 @@ dfn {
     font-style: italic;
 }
 h1 {
+    font-family: var(--font-family-secondary);
     font-size: 2em;
     margin: 0.67em 0;
 }

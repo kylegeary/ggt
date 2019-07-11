@@ -1,10 +1,30 @@
 .post {
+    margin: 0 auto;
+    max-width: 50rem;
 }
 
 .post__body {
 }
 
+.post__body-featured-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.post__body-content,
 .post__cta {
+    font-family: var(--font-family-quaternary);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 2.5rem auto;
+}
+
+.post__body-content {
+    max-width: 35.5rem;
+}
+
+.post__cta {
+    max-width: 50rem;
 }
 
 .post__cta-link {
@@ -13,6 +33,8 @@
 .post__info {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family-primary);
+    font-size: 0.75rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
@@ -23,13 +45,20 @@
     display: block;
 }
 
-.post__info-author {
+.post__info-author,
+.post__info-date {
+    letter-spacing: 0.5px;
+    line-height: 1.4;
 }
 
 .post__info-date {
+    line-height: 1.2;
+    margin-bottom: 0.3125rem;
 }
 
 .post__info-title {
+    font-family: var(--font-family-tertiary);
+    font-size: 2rem;
 }
 
 .post__info-author {
