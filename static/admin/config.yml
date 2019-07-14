@@ -1,8 +1,41 @@
 backend:
     name: git-gateway
-    branch: master
+    branch: develop
 publish_mode: editorial_workflow
-media_library:
-    name: uploadcare
-    config:
-        publicKey: 7bd9fdbbcfc47d6f8ecd
+media_folder: 'static/images/uploads'
+public_folder: '/images/uploads'
+collections:
+    - name: post
+      label: Post
+      folder: /src/posts/post
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - {
+                label: 'Author',
+                name: 'author',
+                widget: 'select',
+                options:
+                    [
+                        'Chris Fellows',
+                        'Paige Fellows',
+                        'Kyle Geary',
+                        'Oliver Geary',
+                        'Rachel Geary',
+                    ],
+            }
+          - {
+                label: 'Post Type',
+                name: 'type',
+                widget: 'select',
+                options: ['Blog', 'Recipe'],
+            }
+          - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
+          - {
+                label: 'Featured Image Alt',
+                name: 'featuredImageAlt',
+                widget: 'string',
+            }
+          - { label: 'Body', name: 'Body', widget: 'markdown' }

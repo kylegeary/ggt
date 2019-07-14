@@ -6,17 +6,14 @@
  */
 
 import React from 'react';
-
 import Header from './header';
 import Footer from './footer';
-import Nav from './nav';
 import '../css/layout.css';
 
 const Layout = ({ children }) => {
     return (
         <div className="page-wrapper">
             <Header />
-            <Nav />
             <main>{children}</main>
             <Footer />
         </div>
