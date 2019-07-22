@@ -4,6 +4,18 @@
     position: relative;
 }
 
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 80rem;
+}
+
 .header__title {
     color: inherit;
     font-size: 1.5rem;
@@ -53,10 +65,17 @@
 }
 
 @media screen and (min-width: 25em) {
-    .header {
+    .header__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 35rem) {
+    .header__content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }

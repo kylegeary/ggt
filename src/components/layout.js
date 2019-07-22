@@ -12,11 +12,13 @@ import '../css/layout.css';
 
 const Layout = ({ children }) => {
     return (
-        <div className="page-wrapper">
+        <>
             <Header />
-            <main>{children}</main>
+            <div className="page-wrapper">
+                <main>{children}</main>
+            </div>
             <Footer />
-        </div>
+        </>
     );
 };
 
