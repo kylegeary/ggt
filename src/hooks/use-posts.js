@@ -19,7 +19,7 @@ const usePosts = () => {
         }
     `);
 
-    return data.allMdx.nodes.map(post => ({
+    return data.allMdx.nodes.map((post, index) => ({
         author: post.frontmatter.author,
         date: post.frontmatter.date,
         slug: post.frontmatter.slug,
@@ -28,6 +28,7 @@ const usePosts = () => {
         excerpt: post.excerpt,
         featuredImage: post.frontmatter.featuredImage,
         featuredImageAlt: post.frontmatter.featuredImageAlt,
+        index: index,
     }));
 };
 

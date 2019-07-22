@@ -32,7 +32,7 @@
 .card__content-cta {
     margin-top: auto;
 }
-.card__content-cta-link {
+.card__content-cta-link a {
     padding: 4px 0;
     font-size: 0.8125rem;
     min-width: 64px;
