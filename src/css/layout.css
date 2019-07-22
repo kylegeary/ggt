@@ -644,6 +644,7 @@ pre tt:after {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 2rem;
     display: flex;
     min-height: 100vh;
     flex-direction: column;

@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 35rem) {
     .header__content {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }

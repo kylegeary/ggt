@@ -69,7 +69,7 @@
     align-items: inherit;
     justify-content: inherit;
     padding: 0 1rem;
-    background-color: #2c76ff;
+    background-color: color-mod(#2c76ff alpha(75%));
     border-radius: 0.25rem;
     font-size: 1.25rem;
 }

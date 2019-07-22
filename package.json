@@ -1,9 +1,9 @@
 {
-    "name": "gatsby-starter-default",
+    "name": "gatsby-travel-blog",
     "private": true,
-    "description": "A simple starter to get up and developing quickly with Gatsby",
+    "description": "A gatsby travel blog with netlify CMS and a media manager",
     "version": "0.1.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+    "author": "Kyle Geary",
     "dependencies": {
         "@mdx-js/mdx": "^1.0.21",
         "@mdx-js/react": "^1.0.21",
