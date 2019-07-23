@@ -16,7 +16,7 @@
 }
 
 .featured-post__content {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -142,5 +142,6 @@
 @media screen and (min-width: 60rem) {
     .featured-post__content {
         padding: 3rem;
+        width: 50%;
     }
 }

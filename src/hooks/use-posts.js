@@ -19,7 +19,7 @@ const usePosts = () => {
         }
     `);
 
-    return data.allMdx.nodes.map((post, index) => ({
+    return data.allMdx.nodes.reverse().map((post, index) => ({
         author: post.frontmatter.author,
         date: post.frontmatter.date,
         slug: post.frontmatter.slug,
