@@ -23,11 +23,8 @@
     max-width: 35.5rem;
 }
 
-.post__cta {
-    max-width: 50rem;
-}
-
 .post__cta-link {
+    text-decoration: none;
 }
 
 .post__info {
@@ -37,6 +34,8 @@
     font-size: 0.75rem;
     margin-bottom: 2rem;
 }
+
+
 
 .post__info-author,
 .post__info-date,

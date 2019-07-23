@@ -1,0 +1,9 @@
+.featured-image__container {
+    margin: 0 auto;
+}
+
+.featured-image {
+    max-height: 30rem;
+    object-fit: cover;
+    object-position: center;
+}

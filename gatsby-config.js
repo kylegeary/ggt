@@ -22,6 +22,7 @@ module.exports = {
                 path: `${__dirname}/src/`,
             },
         },
+        `gatsby-plugin-lodash`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {

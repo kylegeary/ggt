@@ -1,13 +1,13 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-mdx';
 import Layout from '../components/layout';
-import { Link } from 'gatsby';
 import '../css/post.css';
 
 export const query = graphql`
     query($slug: String!) {
-        mdx(frontmatter: { slug: { eq: $slug } }) {
+        post: mdx(frontmatter: { slug: { eq: $slug } }) {
+            id
             frontmatter {
                 title
                 author
@@ -23,7 +23,7 @@ export const query = graphql`
     }
 `;
 
-const PostTemplate = ({ data: { mdx: post } }) => (
+const PostTemplate = ({ data: { post, allPosts } }) => (
     <Layout>
         <div className="post">
             <section className="post__info">
