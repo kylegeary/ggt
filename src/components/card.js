@@ -10,9 +10,7 @@ const Card = ({ post }) => (
                 style={{
                     backgroundImage: `url(${post.featuredImage})`,
                 }}
-            >
-                <div className="card__overlay"></div>
-            </div>
+            ></div>
             <div className="card__content">
                 <div className="card__content-metadata">
                     <span className="card__content-category">{post.type}</span>
