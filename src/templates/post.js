@@ -15,6 +15,7 @@ export const query = graphql`
                 type
                 featuredImage
                 featuredImageAlt
+                slug
             }
             code {
                 body
@@ -23,7 +24,7 @@ export const query = graphql`
     }
 `;
 
-const PostTemplate = ({ data: { post, allPosts } }) => (
+const PostTemplate = ({ data: { post } }) => (
     <Layout>
         <div className="post">
             <section className="post__info">
@@ -36,6 +37,13 @@ const PostTemplate = ({ data: { post, allPosts } }) => (
                     </Link>
                 </span>
                 <span className="post__info-type">{post.frontmatter.type}</span>
+                <div className="post__info-social">
+                    <a
+                        href={`https://www.facebook.com/sharer/sharer.php?u=guyandgaltravel.netlify.com/${post.frontmatter.slug}`}
+                    >
+                        Share
+                    </a>
+                </div>
             </section>
             <main className="post__body">
                 <img
