@@ -1,17 +1,16 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Image from '../components/image';
+import ContactForm from '../components/contactForm';
+//import Image from '../components/image';
 import SEO from '../components/seo';
+import '../css/contact.css';
+import '../css/form.css';
 
 const ContactPage = () => (
     <Layout>
         <SEO title="Contact" />
-        <h1>Contact us</h1>
-        <p>Lorem Ipsum</p>
-        <p>dolor sit amet.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-            <Image />
-        </div>
+        <h1 className="contact-title">Contact Us</h1>
+        <ContactForm />
     </Layout>
 );
 

@@ -36,7 +36,6 @@ const PostTemplate = ({ data: { post } }) => (
                         {post.frontmatter.author}
                     </Link>
                 </span>
-                <span className="post__info-type">{post.frontmatter.type}</span>
                 <div className="post__info-social">
                     <a
                         href={`https://www.facebook.com/sharer/sharer.php?u=guyandgaltravel.netlify.com/${post.frontmatter.slug}`}

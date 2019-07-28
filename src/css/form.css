@@ -1,0 +1,48 @@
+.form {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.form__field {
+    padding: 1rem;
+}
+
+.form__field--full {
+    flex-basis: 100%;
+}
+
+.form__field--half {
+    flex-basis: 50%;
+}
+
+.form__field-input {
+    padding: 0.25rem;
+    width: 100%;
+}
+
+.form__field-textarea {
+    width: 100%;
+}
+
+.form__field-label {
+    display: block;
+}
+
+.form__fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__instructions {
+    margin: 0 auto;
+}
+
+.form__submit {
+}
+
+@media screen and (min-width: 35rem) {
+    .form__fields {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

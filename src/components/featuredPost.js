@@ -17,14 +17,12 @@ const FeaturedPost = ({ post }) => (
                 </h1>
                 <p className="featured-post__text-body">{post.excerpt}</p>
             </div>
-            <div className="featured-post__cta">
-                <div className="featured-post__cta-link">
-                    <Link to={post.slug}>
-                        <span className="featured-post__cta-link-label">
-                            Read &rarr;
-                        </span>
-                    </Link>
-                </div>
+            <div className="button-link button-link--large">
+                <Link to={post.slug}>
+                    <span className="button-link__label button-link__label--large">
+                        Read &rarr;
+                    </span>
+                </Link>
             </div>
         </div>
     </div>

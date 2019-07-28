@@ -35,8 +35,6 @@
     margin-bottom: 2rem;
 }
 
-
-
 .post__info-author,
 .post__info-date,
 .post__info-type {
@@ -59,8 +57,10 @@
     font-size: 2rem;
 }
 
-.post__info-author {
+.post__info-author a {
+    text-decoration: none;
 }
 
-.post__info-type {
+.post__info-social a {
+    text-decoration: none;
 }

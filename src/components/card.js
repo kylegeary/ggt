@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/buttons.css';
 import '../css/card.css';
 import { Link } from 'gatsby';
 
@@ -20,14 +21,10 @@ const Card = ({ post }) => (
                     <Link to={post.slug}>{post.title}</Link>
                 </h2>
                 <p className="card__content-body">{post.excerpt}</p>
-                <div className="card__content-cta">
-                    <div className="card__content-cta-link">
-                        <Link to={post.slug}>
-                            <span className="card__content-cta-link-label">
-                                Read More
-                            </span>
-                        </Link>
-                    </div>
+                <div className="button-link">
+                    <Link to={post.slug}>
+                        <span className="button-link__label">Read More</span>
+                    </Link>
                 </div>
             </div>
         </div>
